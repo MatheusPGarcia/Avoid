@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -110,29 +110,29 @@
 		5A8F3DE4CA46F753AC894CB2714646D0 /* Pods-Avoid-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Avoid-resources.sh"; sourceTree = "<group>"; };
 		628C011A30D6B59D4161106DC24F5B1E /* Pods-Avoid-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Avoid-dummy.m"; sourceTree = "<group>"; };
 		63C4BD65EEF247D4C8A723C0F18B326C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		6F4C357EEE58E91777DC1CE28EDDA55E /* BarcodeScanner.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = BarcodeScanner.bundle; path = "BarcodeScanner-BarcodeScanner.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F4C357EEE58E91777DC1CE28EDDA55E /* BarcodeScanner.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarcodeScanner.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		702ED932104A439804324A6FB42CEDFB /* Pods-Avoid-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Avoid-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7245207F44E36450DA67C6A3B549362C /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		75DD73D97EBC9CFB742E226476DDFDC6 /* ResourceBundle-Localization-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Localization-Info.plist"; sourceTree = "<group>"; };
 		7775111F48A62E69131012801F34C1B1 /* Pods-AvoidUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AvoidUITests-umbrella.h"; sourceTree = "<group>"; };
 		7CF77C18F336C346A8AE8DE007231EB8 /* Functions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Functions.swift; path = Sources/Helpers/Functions.swift; sourceTree = "<group>"; };
-		8336320A089F1DEF9CB86C471F282A8A /* BarcodeScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BarcodeScanner.framework; path = BarcodeScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8336320A089F1DEF9CB86C471F282A8A /* BarcodeScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BarcodeScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D8F57B6C764BB5F665AA69F512CDF8 /* Pods-Avoid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Avoid.debug.xcconfig"; sourceTree = "<group>"; };
 		85BAD7BF87CF56D8A7FF1831537ED76B /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = State.swift; path = Sources/DataStructures/State.swift; sourceTree = "<group>"; };
 		8EA6CBE93C6E0803E810F708C8066B53 /* UIView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extensions.swift"; path = "Sources/Extensions/UIView+Extensions.swift"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		974F95D6AF81CDDA8865CA0F1112DACF /* Pods-AvoidUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AvoidUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9A1B21C0C4D5FA3796E385314A2EE8AB /* Pods-AvoidTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AvoidTests-resources.sh"; sourceTree = "<group>"; };
 		9D06CD4E058EF1ACFC5C281778610B22 /* Pods-Avoid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Avoid.release.xcconfig"; sourceTree = "<group>"; };
 		A08D0C3B25CB17A085326EC523E4EB37 /* BarcodeScanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BarcodeScanner-dummy.m"; sourceTree = "<group>"; };
 		A2D644755DCC3BFD0925EEDE2599C964 /* Pods-AvoidUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AvoidUITests.modulemap"; sourceTree = "<group>"; };
 		A7607270EC97A2BE17122978FB4CF338 /* MessageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageViewController.swift; path = Sources/Controllers/MessageViewController.swift; sourceTree = "<group>"; };
-		A97F739D9F11C4C90C764A81C6A17079 /* Pods_AvoidUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AvoidUITests.framework; path = "Pods-AvoidUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A97F739D9F11C4C90C764A81C6A17079 /* Pods_AvoidUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvoidUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB05D3FC1B7F21CA865F9B14244287FC /* Pods-AvoidTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AvoidTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B7611996F9B157F0F26A141A4204A483 /* Pods-Avoid-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Avoid-acknowledgements.plist"; sourceTree = "<group>"; };
 		B8672048A1C5451BC0CBD54EE9A2D97D /* HeaderViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeaderViewController.swift; path = Sources/Controllers/HeaderViewController.swift; sourceTree = "<group>"; };
 		B8817044BB261895723DE90D64964504 /* CameraViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = Sources/Controllers/CameraViewController.swift; sourceTree = "<group>"; };
-		B97DB8C218C86CC9EB526DC423FA38AD /* Pods_Avoid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Avoid.framework; path = "Pods-Avoid.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B97DB8C218C86CC9EB526DC423FA38AD /* Pods_Avoid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Avoid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF15F0A878FBB696FBCAFD18E94A75AB /* Pods-AvoidUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AvoidUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C49A7BE4D6381D6553325922B4025ACA /* BarcodeScanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BarcodeScanner-umbrella.h"; sourceTree = "<group>"; };
 		CAF234C2DAEA0151253EBC5D2ADB8B39 /* info@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "info@3x.png"; path = "Images/info@3x.png"; sourceTree = "<group>"; };
@@ -143,9 +143,9 @@
 		DD2DF71493FEDB3F17D4C55E0190DC37 /* flashOff@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "flashOff@3x.png"; path = "Images/flashOff@3x.png"; sourceTree = "<group>"; };
 		DD7580572085EA02709F78F5DCD4A4AA /* BarcodeScannerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarcodeScannerViewController.swift; path = Sources/Controllers/BarcodeScannerViewController.swift; sourceTree = "<group>"; };
 		E5A0F5CFFAA331F60EC87FA3D7B4752A /* Pods-AvoidTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AvoidTests.modulemap"; sourceTree = "<group>"; };
-		E5BB720EB44059E148B03208EBC4B920 /* Localization.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Localization.bundle; path = "BarcodeScanner-Localization.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5BB720EB44059E148B03208EBC4B920 /* Localization.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Localization.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		E91185D286992C01A380A1DACAFB800D /* AVMetadataObject+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AVMetadataObject+Extensions.swift"; path = "Sources/Extensions/AVMetadataObject+Extensions.swift"; sourceTree = "<group>"; };
-		EA4AF197EC3391D47CC931B6A4D6E4AD /* Pods_AvoidTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AvoidTests.framework; path = "Pods-AvoidTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA4AF197EC3391D47CC931B6A4D6E4AD /* Pods_AvoidTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvoidTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF9A1062D6A9F6EDCFE5E0359A32C01 /* Pods-AvoidTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AvoidTests-dummy.m"; sourceTree = "<group>"; };
 		F2EC1C05551E3B767EA845A590AD41D4 /* Pods-Avoid.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Avoid.modulemap"; sourceTree = "<group>"; };
 		F6B4D5839CE8C422AF6EE1D3ED51FCD8 /* TorchMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TorchMode.swift; path = Sources/DataStructures/TorchMode.swift; sourceTree = "<group>"; };
@@ -283,7 +283,6 @@
 				973FCECA42BED35985195721545EBC29 /* Resources */,
 				8AC6D485066B15A8B7C573E601EE3FE5 /* Support Files */,
 			);
-			name = BarcodeScanner;
 			path = BarcodeScanner;
 			sourceTree = "<group>";
 		};
@@ -376,7 +375,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = SwiftLint;
 			path = SwiftLint;
 			sourceTree = "<group>";
 		};
@@ -987,12 +985,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 00D1206D485615EF66E91933EE0BD3E8 /* BarcodeScanner.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
