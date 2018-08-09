@@ -20,6 +20,9 @@
 		AE97C1912119F96C002C6C27 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE97C1902119F96C002C6C27 /* CloudKit.framework */; };
 		AE97C193211C6452002C6C27 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE97C192211C6452002C6C27 /* DatabaseService.swift */; };
 		AE97C195211C652C002C6C27 /* fetchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE97C194211C652C002C6C27 /* fetchModel.swift */; };
+		AE97C198211C6B15002C6C27 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE97C197211C6B15002C6C27 /* Product.swift */; };
+		AE97C19A211C6B24002C6C27 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE97C199211C6B24002C6C27 /* Ingredient.swift */; };
+		AE97C19C211C6B31002C6C27 /* Blacklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE97C19B211C6B31002C6C27 /* Blacklist.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		AE97C1902119F96C002C6C27 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		AE97C192211C6452002C6C27 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
 		AE97C194211C652C002C6C27 /* fetchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetchModel.swift; sourceTree = "<group>"; };
+		AE97C197211C6B15002C6C27 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		AE97C199211C6B24002C6C27 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		AE97C19B211C6B31002C6C27 /* Blacklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blacklist.swift; sourceTree = "<group>"; };
 		B60A98F5174D9D4D64C5C582 /* Pods-Avoid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Avoid.release.xcconfig"; path = "Pods/Target Support Files/Pods-Avoid/Pods-Avoid.release.xcconfig"; sourceTree = "<group>"; };
 		B81BCD576D473DAD253723F7 /* Pods-Avoid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Avoid.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Avoid/Pods-Avoid.debug.xcconfig"; sourceTree = "<group>"; };
 		C664E7A740FE9FA1E4C4D30C /* Pods_AvoidUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvoidUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +143,7 @@
 			children = (
 				AE97C18D2119F961002C6C27 /* Avoid.entitlements */,
 				AE97C196211C6A76002C6C27 /* Service */,
+				AE97C19D211C6B38002C6C27 /* Model */,
 				AE56909D2117593800790758 /* AppDelegate.swift */,
 				AE56909F2117593800790758 /* ViewController.swift */,
 				AE5690A12117593800790758 /* Main.storyboard */,
@@ -172,6 +179,16 @@
 				AE97C192211C6452002C6C27 /* DatabaseService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		AE97C19D211C6B38002C6C27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE97C197211C6B15002C6C27 /* Product.swift */,
+				AE97C199211C6B24002C6C27 /* Ingredient.swift */,
+				AE97C19B211C6B31002C6C27 /* Blacklist.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B8B1D6C07AC56F716D07A97A /* Frameworks */ = {
@@ -418,7 +435,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE97C193211C6452002C6C27 /* DatabaseService.swift in Sources */,
+				AE97C19C211C6B31002C6C27 /* Blacklist.swift in Sources */,
 				AE5690A02117593800790758 /* ViewController.swift in Sources */,
+				AE97C19A211C6B24002C6C27 /* Ingredient.swift in Sources */,
+				AE97C198211C6B15002C6C27 /* Product.swift in Sources */,
 				AE97C195211C652C002C6C27 /* fetchModel.swift in Sources */,
 				AE56909E2117593800790758 /* AppDelegate.swift in Sources */,
 			);
