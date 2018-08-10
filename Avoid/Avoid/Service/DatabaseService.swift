@@ -1,4 +1,3 @@
-
 //
 //  DatabaseService.swift
 //  Avoid
@@ -12,7 +11,7 @@ import CloudKit
 
 class DatabaseService: NSObject {
 
-    func fetchBlacklist(fromModel model: fetchModel, completion: @escaping ([CKRecord]) -> Void) {
+    func fetchBlacklist(fromModel model: FetchModel, completion: @escaping ([CKRecord]) -> Void) {
 
         let privateDatabase = CKContainer.default().privateCloudDatabase
         var newModel = model
@@ -23,7 +22,7 @@ class DatabaseService: NSObject {
         }
     }
 
-    func fetchProductOrIngredient(fromModel model: fetchModel, completion: @escaping ([CKRecord]) -> Void) {
+    func fetchProductOrIngredient(fromModel model: FetchModel, completion: @escaping ([CKRecord]) -> Void) {
 
         let publicDatabase = CKContainer.default().publicCloudDatabase
         var newModel = model
@@ -34,7 +33,7 @@ class DatabaseService: NSObject {
         }
     }
 
-    private func fetch(fromModel model: fetchModel, completion: @escaping ([CKRecord]) -> Void) {
+    private func fetch(fromModel model: FetchModel, completion: @escaping ([CKRecord]) -> Void) {
 
         var predicateValue: NSPredicate
 

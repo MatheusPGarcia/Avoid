@@ -9,7 +9,7 @@
 import Foundation
 import CloudKit
 
-struct fetchModel {
+struct FetchModel {
 
     var recordType: String?
     var predicate: String?
