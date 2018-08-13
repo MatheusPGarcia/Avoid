@@ -17,6 +17,14 @@
 		AE5690A82117593C00790758 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5690A62117593C00790758 /* LaunchScreen.storyboard */; };
 		AE5690B32117593C00790758 /* AvoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5690B22117593C00790758 /* AvoidTests.swift */; };
 		AE5690BE2117593D00790758 /* AvoidUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5690BD2117593D00790758 /* AvoidUITests.swift */; };
+		AE97C1912119F96C002C6C27 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE97C1902119F96C002C6C27 /* CloudKit.framework */; };
+		AE97C198211C6B15002C6C27 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE97C197211C6B15002C6C27 /* Product.swift */; };
+		AE97C19A211C6B24002C6C27 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE97C199211C6B24002C6C27 /* Ingredient.swift */; };
+		AE97C19C211C6B31002C6C27 /* Blacklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE97C19B211C6B31002C6C27 /* Blacklist.swift */; };
+		AEDF4C632121A9CB002F10F6 /* ProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDF4C622121A9CB002F10F6 /* ProductController.swift */; };
+		AEDF4C652121B616002F10F6 /* CloudKitConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDF4C642121B616002F10F6 /* CloudKitConnectivity.swift */; };
+		AEDF4C672121BD04002F10F6 /* ParseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDF4C662121BD04002F10F6 /* ParseManager.swift */; };
+		AEDF4C692121C6A6002F10F6 /* IngredientsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDF4C682121C6A6002F10F6 /* IngredientsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +62,15 @@
 		AE5690B92117593C00790758 /* AvoidUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AvoidUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5690BD2117593D00790758 /* AvoidUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvoidUITests.swift; sourceTree = "<group>"; };
 		AE5690BF2117593D00790758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE97C18D2119F961002C6C27 /* Avoid.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Avoid.entitlements; sourceTree = "<group>"; };
+		AE97C1902119F96C002C6C27 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		AE97C197211C6B15002C6C27 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		AE97C199211C6B24002C6C27 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		AE97C19B211C6B31002C6C27 /* Blacklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blacklist.swift; sourceTree = "<group>"; };
+		AEDF4C622121A9CB002F10F6 /* ProductController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductController.swift; sourceTree = "<group>"; };
+		AEDF4C642121B616002F10F6 /* CloudKitConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitConnectivity.swift; sourceTree = "<group>"; };
+		AEDF4C662121BD04002F10F6 /* ParseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseManager.swift; sourceTree = "<group>"; };
+		AEDF4C682121C6A6002F10F6 /* IngredientsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsController.swift; sourceTree = "<group>"; };
 		B60A98F5174D9D4D64C5C582 /* Pods-Avoid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Avoid.release.xcconfig"; path = "Pods/Target Support Files/Pods-Avoid/Pods-Avoid.release.xcconfig"; sourceTree = "<group>"; };
 		B81BCD576D473DAD253723F7 /* Pods-Avoid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Avoid.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Avoid/Pods-Avoid.debug.xcconfig"; sourceTree = "<group>"; };
 		C664E7A740FE9FA1E4C4D30C /* Pods_AvoidUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvoidUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +84,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A550F8217733A85086D0E2F5 /* Pods_Avoid.framework in Frameworks */,
+				AE97C1912119F96C002C6C27 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,11 +145,13 @@
 		AE56909C2117593800790758 /* Avoid */ = {
 			isa = PBXGroup;
 			children = (
+				AE97C18D2119F961002C6C27 /* Avoid.entitlements */,
 				AE56909D2117593800790758 /* AppDelegate.swift */,
-				AE56909F2117593800790758 /* ViewController.swift */,
-				AE5690A12117593800790758 /* Main.storyboard */,
+				AE97C196211C6A76002C6C27 /* Service */,
+				AE97C19D211C6B38002C6C27 /* Model */,
+				AEDF4C6021213CB3002F10F6 /* Controllers */,
+				AEDF4C6121213CD0002F10F6 /* View */,
 				AE5690A42117593C00790758 /* Assets.xcassets */,
-				AE5690A62117593C00790758 /* LaunchScreen.storyboard */,
 				AE5690A92117593C00790758 /* Info.plist */,
 			);
 			path = Avoid;
@@ -155,9 +175,48 @@
 			path = AvoidUITests;
 			sourceTree = "<group>";
 		};
+		AE97C196211C6A76002C6C27 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AEDF4C622121A9CB002F10F6 /* ProductController.swift */,
+				AEDF4C682121C6A6002F10F6 /* IngredientsController.swift */,
+				AEDF4C642121B616002F10F6 /* CloudKitConnectivity.swift */,
+				AEDF4C662121BD04002F10F6 /* ParseManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AE97C19D211C6B38002C6C27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE97C197211C6B15002C6C27 /* Product.swift */,
+				AE97C199211C6B24002C6C27 /* Ingredient.swift */,
+				AE97C19B211C6B31002C6C27 /* Blacklist.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AEDF4C6021213CB3002F10F6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE56909F2117593800790758 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AEDF4C6121213CD0002F10F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AE5690A12117593800790758 /* Main.storyboard */,
+				AE5690A62117593C00790758 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B8B1D6C07AC56F716D07A97A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE97C1902119F96C002C6C27 /* CloudKit.framework */,
 				3A5304C1945983A3CAD21EF9 /* Pods_Avoid.framework */,
 				67A4F5E65FF9171ACF83F23E /* Pods_AvoidTests.framework */,
 				C664E7A740FE9FA1E4C4D30C /* Pods_AvoidUITests.framework */,
@@ -238,6 +297,14 @@
 				TargetAttributes = {
 					AE5690992117593800790758 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					AE5690AD2117593C00790758 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -389,8 +456,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEDF4C672121BD04002F10F6 /* ParseManager.swift in Sources */,
+				AE97C19C211C6B31002C6C27 /* Blacklist.swift in Sources */,
 				AE5690A02117593800790758 /* ViewController.swift in Sources */,
+				AEDF4C652121B616002F10F6 /* CloudKitConnectivity.swift in Sources */,
+				AE97C19A211C6B24002C6C27 /* Ingredient.swift in Sources */,
+				AE97C198211C6B15002C6C27 /* Product.swift in Sources */,
 				AE56909E2117593800790758 /* AppDelegate.swift in Sources */,
+				AEDF4C692121C6A6002F10F6 /* IngredientsController.swift in Sources */,
+				AEDF4C632121A9CB002F10F6 /* ProductController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,6 +638,7 @@
 			baseConfigurationReference = B81BCD576D473DAD253723F7 /* Pods-Avoid.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Avoid/Avoid.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3W69VTQXGX;
 				INFOPLIST_FILE = Avoid/Info.plist;
@@ -583,6 +658,7 @@
 			baseConfigurationReference = B60A98F5174D9D4D64C5C582 /* Pods-Avoid.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Avoid/Avoid.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3W69VTQXGX;
 				INFOPLIST_FILE = Avoid/Info.plist;
