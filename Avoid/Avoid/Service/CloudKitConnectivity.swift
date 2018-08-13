@@ -38,4 +38,33 @@ class CloudKitConnectivity: NSObject {
             completion(record)
         }
     }
+
+    func fetchIngredients(product: Product, completion: @escaping ([CKRecord]) -> Void) {
+
+        let publicDatabase = CKContainer.default().publicCloudDatabase
+
+        let category = "Ingredients"
+        let predicate = "products"
+        let record = product.recordId
+
+        // Generate query's predicate
+        let predicateValue = NSPredicate(format: "\(predicate) = %@", record)
+
+        // Perform request
+        let query = CKQuery(recordType: category, predicate: predicateValue)
+        publicDatabase.perform(query, inZoneWith: nil) { (record, error) in
+
+            if let error = error {
+                print("ops, something went wrong while trying to query \(category):\n\(error)")
+                return
+            }
+
+            guard let record = record else {
+                print("the \(category) list is empty")
+                return
+            }
+
+            completion(record)
+        }
+    }
 }
