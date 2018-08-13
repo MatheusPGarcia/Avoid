@@ -24,6 +24,7 @@
 		AEDF4C632121A9CB002F10F6 /* ProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDF4C622121A9CB002F10F6 /* ProductController.swift */; };
 		AEDF4C652121B616002F10F6 /* CloudKitConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDF4C642121B616002F10F6 /* CloudKitConnectivity.swift */; };
 		AEDF4C672121BD04002F10F6 /* ParseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDF4C662121BD04002F10F6 /* ParseManager.swift */; };
+		AEDF4C692121C6A6002F10F6 /* IngredientsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDF4C682121C6A6002F10F6 /* IngredientsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		AEDF4C622121A9CB002F10F6 /* ProductController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductController.swift; sourceTree = "<group>"; };
 		AEDF4C642121B616002F10F6 /* CloudKitConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitConnectivity.swift; sourceTree = "<group>"; };
 		AEDF4C662121BD04002F10F6 /* ParseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseManager.swift; sourceTree = "<group>"; };
+		AEDF4C682121C6A6002F10F6 /* IngredientsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsController.swift; sourceTree = "<group>"; };
 		B60A98F5174D9D4D64C5C582 /* Pods-Avoid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Avoid.release.xcconfig"; path = "Pods/Target Support Files/Pods-Avoid/Pods-Avoid.release.xcconfig"; sourceTree = "<group>"; };
 		B81BCD576D473DAD253723F7 /* Pods-Avoid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Avoid.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Avoid/Pods-Avoid.debug.xcconfig"; sourceTree = "<group>"; };
 		C664E7A740FE9FA1E4C4D30C /* Pods_AvoidUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvoidUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				AEDF4C622121A9CB002F10F6 /* ProductController.swift */,
+				AEDF4C682121C6A6002F10F6 /* IngredientsController.swift */,
 				AEDF4C642121B616002F10F6 /* CloudKitConnectivity.swift */,
 				AEDF4C662121BD04002F10F6 /* ParseManager.swift */,
 			);
@@ -460,6 +463,7 @@
 				AE97C19A211C6B24002C6C27 /* Ingredient.swift in Sources */,
 				AE97C198211C6B15002C6C27 /* Product.swift in Sources */,
 				AE56909E2117593800790758 /* AppDelegate.swift in Sources */,
+				AEDF4C692121C6A6002F10F6 /* IngredientsController.swift in Sources */,
 				AEDF4C632121A9CB002F10F6 /* ProductController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

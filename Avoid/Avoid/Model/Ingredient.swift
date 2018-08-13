@@ -7,12 +7,15 @@
 //
 
 import Foundation
+import CloudKit
 
 struct Ingredient {
 
-    let name: String
+    var name: String
+    var recordId: CKRecordID
 
-    init(name: String) {
+    init(name: String, recordId: CKRecordID) {
         self.name = name
+        self.recordId = recordId
     }
 }

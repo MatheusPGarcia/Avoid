@@ -22,4 +22,20 @@ class ParseManager: NSObject {
 
         return newProduct
     }
+
+    func parseIngredients(data: [CKRecord]) -> [Ingredient] {
+
+        var ingredientsArray = [Ingredient]()
+
+        for ingredient in data {
+            if let name = ingredient["name"] as? String {
+                let recordId = ingredient.recordID
+                let newIngredient = Ingredient(name: name, recordId: recordId)
+
+                ingredientsArray.append(newIngredient)
+            }
+        }
+
+        return ingredientsArray
+    }
 }

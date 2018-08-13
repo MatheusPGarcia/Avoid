@@ -45,7 +45,10 @@ extension ViewController: BarcodeScannerCodeDelegate {
 
         let productMannager = ProductController()
         productMannager.findProductOnDatabse(productBarcode: code) { (product) in
-            print("Oh yeah baby, this is your product: \(product)")
+            let ingredientsMannager = IngredientsController()
+            ingredientsMannager.findIngredients(fromProduct: product, completion: { (ingredients) in
+                print("These are the ingredients of \(product.name):\n\(ingredients)")
+            })
         }
 
         controller.dismiss(animated: true, completion: nil)

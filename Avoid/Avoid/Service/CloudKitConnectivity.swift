@@ -43,12 +43,12 @@ class CloudKitConnectivity: NSObject {
 
         let publicDatabase = CKContainer.default().publicCloudDatabase
 
-        let category = "Ingredients"
-        let predicate = "products"
-        let record = product.recordId
+        let category = "Ingredient"
+//        let predicate = "products"
+        let idReference = CKReference(recordID: product.recordId, action: .deleteSelf)
 
         // Generate query's predicate
-        let predicateValue = NSPredicate(format: "\(predicate) = %@", record)
+        let predicateValue = NSPredicate(format: "%@ IN products", idReference)
 
         // Perform request
         let query = CKQuery(recordType: category, predicate: predicateValue)
