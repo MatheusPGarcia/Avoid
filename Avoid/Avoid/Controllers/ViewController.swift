@@ -45,6 +45,8 @@ extension ViewController: BarcodeScannerCodeDelegate {
         print("Barcode Data: \(code)")
         print("Symbology Type: \(type)")
 
+        _ = ProductController().findProductOnDatabse(productBarcode: code)
+
         controller.dismiss(animated: true, completion: nil)
         responseLabel.text = code
     }

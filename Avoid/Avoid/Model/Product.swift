@@ -12,5 +12,11 @@ import CloudKit
 struct Product {
 
     var name: String
+    var recordId: CKRecordID
     var ingredients = [CKReference]()
+
+    init(name: String, recordId: CKRecordID) {
+        self.name = name
+        self.recordId = recordId
+    }
 }
