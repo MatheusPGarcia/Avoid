@@ -42,10 +42,11 @@ class ViewController: UIViewController {
 
 extension ViewController: BarcodeScannerCodeDelegate {
     func scanner(_ controller: BarcodeScannerViewController, didCaptureCode code: String, type: String) {
-        print("Barcode Data: \(code)")
-        print("Symbology Type: \(type)")
 
-        _ = ProductController().findProductOnDatabse(productBarcode: code)
+        let productMannager = ProductController()
+        productMannager.findProductOnDatabse(productBarcode: code) { (product) in
+            print("Oh yeah baby, this is your product: \(product)")
+        }
 
         controller.dismiss(animated: true, completion: nil)
         responseLabel.text = code

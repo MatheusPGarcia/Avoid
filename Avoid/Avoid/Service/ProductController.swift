@@ -11,12 +11,15 @@ import CloudKit
 
 class ProductController: NSObject {
 
-    func findProductOnDatabse(productBarcode: String) -> Product? {
+    func findProductOnDatabse(productBarcode: String, completion: @escaping (Product) -> Void) {
 
-        _ = CloudKitConnectivity().fetchProduct(barcode: productBarcode) { (record) in
-            print("at least here we got! With this fucking data: \(record)")
+        let databaseConnection = CloudKitConnectivity()
+        databaseConnection.fetchProduct(barcode: productBarcode) { (record) in
+
+            let parser = ParseManager()
+            guard let product = parser.parseProduct(data: record) else { return }
+
+            completion(product)
         }
-
-        return nil
     }
 }
