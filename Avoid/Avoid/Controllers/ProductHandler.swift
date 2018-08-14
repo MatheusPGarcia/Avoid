@@ -19,6 +19,11 @@ class ProductHandler: NSObject {
             ingredientsMannager.findIngredients(fromProduct: product, completion: { (ingredients) in
 
                 // Here you have all the ingredients from the product
+                print("These are the ingredients of \(product.name):")
+                let ingredientsList = ingredients.sorted(by: { $0.name < $1.name })
+                for ingredient in ingredientsList {
+                    print(ingredient.name)
+                }
             })
         }
     }
