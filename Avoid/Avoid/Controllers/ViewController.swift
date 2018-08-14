@@ -43,12 +43,9 @@ class ViewController: UIViewController {
 extension ViewController: BarcodeScannerCodeDelegate {
     func scanner(_ controller: BarcodeScannerViewController, didCaptureCode code: String, type: String) {
 
-        let productMannager = ProductController()
-        productMannager.findProductOnDatabse(productBarcode: code) { (product) in
-            let ingredientsMannager = IngredientsController()
-            ingredientsMannager.findIngredients(fromProduct: product, completion: { (ingredients) in
-                print("These are the ingredients of \(product.name):\n\(ingredients)")
-            })
+        let checker = ProductHandler()
+        checker.verifyProduct(barcode: code) { (result) in
+            print ("The product checker answered: \(result)")
         }
 
         controller.dismiss(animated: true, completion: nil)
