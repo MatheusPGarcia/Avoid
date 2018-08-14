@@ -25,46 +25,52 @@ class CloudKitConnectivity: NSObject {
         let query = CKQuery(recordType: category, predicate: predicateValue)
         publicDatabase.perform(query, inZoneWith: nil) { (record, error) in
 
-            if let error = error {
-                print("ops, something went wrong while trying to query \(category):\n\(error)")
+            if !self.recordFeedback(category: category, record: record, error: error) {
                 return
             }
 
-            guard let record = record else {
-                print("the \(category) list is empty")
-                return
-            }
-
-            completion(record)
+            completion(record!)
         }
     }
 
-    func fetchIngredients(product: Product, completion: @escaping ([CKRecord]) -> Void) {
+    func fetchIngredients(product: Product? = nil, completion: @escaping ([CKRecord]) -> Void) {
 
         let publicDatabase = CKContainer.default().publicCloudDatabase
 
         let category = "Ingredient"
-//        let predicate = "products"
-        let idReference = CKReference(recordID: product.recordId, action: .deleteSelf)
+        var predicateValue = NSPredicate(value: true)
 
-        // Generate query's predicate
-        let predicateValue = NSPredicate(format: "%@ IN products", idReference)
+        if let product = product {
+            let idReference = CKReference(recordID: product.recordId, action: .deleteSelf)
+
+            // Generate query's predicate
+            predicateValue = NSPredicate(format: "%@ IN products", idReference)
+        }
 
         // Perform request
         let query = CKQuery(recordType: category, predicate: predicateValue)
         publicDatabase.perform(query, inZoneWith: nil) { (record, error) in
 
-            if let error = error {
-                print("ops, something went wrong while trying to query \(category):\n\(error)")
+            if !self.recordFeedback(category: category, record: record, error: error) {
                 return
             }
 
-            guard let record = record else {
-                print("the \(category) list is empty")
-                return
-            }
-
-            completion(record)
+            completion(record!)
         }
+    }
+
+    func recordFeedback(category: String, record: [CKRecord]?, error: Error?) -> Bool {
+
+        if let error = error {
+            print("ops, something went wrong while trying to query \(category):\n\(error)")
+            return false
+        }
+
+         if record == nil {
+            print("the \(category) list is empty")
+            return false
+        }
+
+        return true
     }
 }

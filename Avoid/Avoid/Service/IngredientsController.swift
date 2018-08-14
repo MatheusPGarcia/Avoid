@@ -21,4 +21,16 @@ class IngredientsController: NSObject {
             completion(ingredients)
         }
     }
+
+    func findAllTheIngredients(completion: @escaping ([Ingredient]) -> Void) {
+
+        let databaseConnection = CloudKitConnectivity()
+        databaseConnection.fetchIngredients { (record) in
+
+            let parser = ParseManager()
+            let ingredients = parser.parseIngredients(data: record)
+
+            completion(ingredients)
+        }
+    }
 }
