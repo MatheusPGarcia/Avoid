@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ProductHandler: NSObject {
+class ProductHandler {
 
     func verifyProduct(barcode: String, completion: @escaping (Bool) -> Void) {
 

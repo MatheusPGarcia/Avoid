@@ -21,6 +21,7 @@
 		AE581F0B21234A0100391B2D /* Backlist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE581F0A21234A0100391B2D /* Backlist.storyboard */; };
 		AE581F0D21234A2200391B2D /* BlacklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE581F0C21234A2200391B2D /* BlacklistViewController.swift */; };
 		AE581F0F21234E6D00391B2D /* BlacklistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE581F0E21234E6D00391B2D /* BlacklistTableViewCell.swift */; };
+		AE581F11212450D500391B2D /* BlacklistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE581F10212450D500391B2D /* BlacklistController.swift */; };
 		AE97C1912119F96C002C6C27 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE97C1902119F96C002C6C27 /* CloudKit.framework */; };
 		AE97C198211C6B15002C6C27 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE97C197211C6B15002C6C27 /* Product.swift */; };
 		AE97C19A211C6B24002C6C27 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE97C199211C6B24002C6C27 /* Ingredient.swift */; };
@@ -70,6 +71,7 @@
 		AE581F0A21234A0100391B2D /* Backlist.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Backlist.storyboard; sourceTree = "<group>"; };
 		AE581F0C21234A2200391B2D /* BlacklistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlacklistViewController.swift; sourceTree = "<group>"; };
 		AE581F0E21234E6D00391B2D /* BlacklistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlacklistTableViewCell.swift; sourceTree = "<group>"; };
+		AE581F10212450D500391B2D /* BlacklistController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlacklistController.swift; sourceTree = "<group>"; };
 		AE97C18D2119F961002C6C27 /* Avoid.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Avoid.entitlements; sourceTree = "<group>"; };
 		AE97C1902119F96C002C6C27 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		AE97C197211C6B15002C6C27 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			children = (
 				AEDF4C622121A9CB002F10F6 /* ProductController.swift */,
 				AEDF4C682121C6A6002F10F6 /* IngredientsController.swift */,
+				AE581F10212450D500391B2D /* BlacklistController.swift */,
 				AEDF4C642121B616002F10F6 /* CloudKitConnectivity.swift */,
 				AEDF4C662121BD04002F10F6 /* ParseManager.swift */,
 			);
@@ -471,6 +474,7 @@
 			files = (
 				AEDF4C672121BD04002F10F6 /* ParseManager.swift in Sources */,
 				AE581F0D21234A2200391B2D /* BlacklistViewController.swift in Sources */,
+				AE581F11212450D500391B2D /* BlacklistController.swift in Sources */,
 				AE97C19C211C6B31002C6C27 /* Blacklist.swift in Sources */,
 				AE5690A02117593800790758 /* ViewController.swift in Sources */,
 				AEDF4C652121B616002F10F6 /* CloudKitConnectivity.swift in Sources */,

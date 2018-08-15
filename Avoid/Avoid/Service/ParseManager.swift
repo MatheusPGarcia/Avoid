@@ -9,7 +9,7 @@
 import Foundation
 import CloudKit
 
-class ParseManager: NSObject {
+class ParseManager {
 
     func parseProduct(data: [CKRecord]) -> Product? {
 

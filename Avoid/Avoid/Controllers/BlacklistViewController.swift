@@ -14,6 +14,7 @@ class BlacklistViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
 
     var ingredients = [Ingredient]()
+    var ingredientsSelected = [Ingredient]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,18 @@ class BlacklistViewController: UIViewController {
             }
         }
     }
+
+    @IBAction func saveBlacklist(_ sender: UIButton) {
+        let controller = BlacklistController()
+        controller.saveInitialBlacklist(ingredientsSelected) { (status) in
+            if status {
+                print("Success")
+            } else {
+                print("Failure")
+            }
+        }
+    }
+
 }
 
 extension BlacklistViewController: UITableViewDelegate, UITableViewDataSource {
@@ -40,7 +53,37 @@ extension BlacklistViewController: UITableViewDelegate, UITableViewDataSource {
         }
 
         cell.title.text = ingredients[indexPath.row].name
+        cell.state = ingredients[indexPath.row].state
+        cell.setColor()
 
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let cellSelected = tableView.cellForRow(at: indexPath) as? BlacklistTableViewCell else {
+            return
+        }
+
+        ingredients[indexPath.row].state = !ingredients[indexPath.row].state
+        let currentIngredient = ingredients[indexPath.row]
+
+        if currentIngredient.state == true {
+            
+            ingredientsSelected.append(currentIngredient)
+        } else {
+            var index = 0
+
+            for ingredientInTest in ingredientsSelected {
+                if ingredientInTest == currentIngredient {
+                    break
+                }
+                index += 1
+            }
+
+            ingredientsSelected.remove(at: index)
+        }
+
+        cellSelected.state = currentIngredient.state
+        cellSelected.setColor()
     }
 }
