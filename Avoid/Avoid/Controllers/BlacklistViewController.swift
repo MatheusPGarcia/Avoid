@@ -82,10 +82,13 @@ class BlacklistViewController: UIViewController {
         for currentId in idsSelectedFromCK {
 
             var found = false
+            let ckRecordName = currentId.ingredientRecordName
 
             for currentIngredient in ingredientsSelected {
 
-                if currentIngredient.recordId.recordName == currentId.ingredientRecordName {
+                let ingredientRecordName = currentIngredient.recordId.recordName
+
+                if ingredientRecordName == ckRecordName {
                     found = true
                 }
             }
