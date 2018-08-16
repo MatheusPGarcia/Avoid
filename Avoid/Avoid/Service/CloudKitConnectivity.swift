@@ -59,24 +59,52 @@ class CloudKitConnectivity {
         }
     }
 
-    func saveBlacklist(ingredients: [Ingredient]) -> Bool {
+    func loadBlacklist(completion: @escaping ([CKRecord]) -> Void) -> Bool {
 
         let privateDatabase = CKContainer.default().privateCloudDatabase
 
-        var records = [CKRecord]()
-
+        let category = "Blacklist"
+        let predicateValue = NSPredicate(value: true)
         let zone = CKRecordZone(zoneName: "Blacklist")
 
-        for ingredient in ingredients {
+        let query = CKQuery(recordType: category, predicate: predicateValue)
+        privateDatabase.perform(query, inZoneWith: zone.zoneID) { (record, error) in
+
+            if !self.recordFeedback(category: category, record: record, error: error) {
+                return
+            }
+
+            completion(record!)
+        }
+
+        return true
+    }
+
+    func saveBlacklist(add: [Ingredient], remove: [BlacklistIngredient]) -> Bool {
+
+        let privateDatabase = CKContainer.default().privateCloudDatabase
+        let zone = CKRecordZone(zoneName: "Blacklist")
+
+        var addRecords = [CKRecord]()
+
+        for ingredient in add {
             let record = CKRecord(recordType: "Blacklist", zoneID: zone.zoneID)
 
             let ingredientRecord = ingredient.recordId.recordName as CKRecordValue
             record.setObject(ingredientRecord, forKey: "ingredients")
 
-            records.append(record)
+            addRecords.append(record)
         }
 
-        let operation = CKModifyRecordsOperation(recordsToSave: records, recordIDsToDelete: nil)
+        var removeRecords = [CKRecordID]()
+
+        for ingredient in remove {
+            let recordId = ingredient.selfReferenceId
+
+            removeRecords.append(recordId)
+        }
+
+        let operation = CKModifyRecordsOperation(recordsToSave: addRecords, recordIDsToDelete: removeRecords)
 
         let configuration = CKOperationConfiguration()
         configuration.timeoutIntervalForRequest = 10

@@ -10,12 +10,26 @@ import Foundation
 
 class BlacklistController {
 
-    func saveInitialBlacklist(_ ingredients: [Ingredient], completion: @escaping (Bool) -> Void) {
+    func saveBlacklist(add: [Ingredient], remove: [BlacklistIngredient], completion: @escaping (Bool) -> Void) {
 
         let databaseConnection = CloudKitConnectivity()
-        databaseConnection.saveBlacklist(ingredients: ingredients)
-//        databaseConnection.startBlacklistZone {
-////            databaseConnection.saveBlacklist(value: <#T##CKRecordValue#>)
-//        }
+        let savingResult = databaseConnection.saveBlacklist(add: add, remove: remove)
+        completion(savingResult)
+    }
+
+    func loadBlacklist(completion: @escaping ([BlacklistIngredient]) -> Void) {
+
+        let databaseConnection = CloudKitConnectivity()
+        let result = databaseConnection.loadBlacklist { (record) in
+
+            let parser = ParseManager()
+            let ingredients = parser.parseIngredientsId(data: record)
+
+            completion(ingredients)
+        }
+
+        if !result {
+            print("Error loading blacklist")
+        }
     }
 }
