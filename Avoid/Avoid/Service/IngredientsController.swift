@@ -8,7 +8,7 @@
 
 import Foundation
 
-class IngredientsController: NSObject {
+class IngredientsController {
 
     func findIngredients(fromProduct product: Product, completion: @escaping ([Ingredient]) -> Void) {
 

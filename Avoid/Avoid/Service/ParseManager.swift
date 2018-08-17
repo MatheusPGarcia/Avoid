@@ -9,7 +9,7 @@
 import Foundation
 import CloudKit
 
-class ParseManager: NSObject {
+class ParseManager {
 
     func parseProduct(data: [CKRecord]) -> Product? {
 
@@ -37,5 +37,21 @@ class ParseManager: NSObject {
         }
 
         return ingredientsArray
+    }
+
+    func parseIngredientsId(data: [CKRecord]) -> [BlacklistIngredient] {
+
+        var returningArray = [BlacklistIngredient]()
+
+        for data in data {
+            if let ingredient = data["ingredients"] as? String {
+                let recordId = data.recordID
+                let newBlacklistIngredient = BlacklistIngredient(name: ingredient, reference: recordId)
+
+                returningArray.append(newBlacklistIngredient)
+            }
+        }
+
+        return returningArray
     }
 }
