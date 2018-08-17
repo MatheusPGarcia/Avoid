@@ -96,8 +96,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GNS-Nz-ftz"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="R1P-AT-baf">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="AFa-aG-GZx"/>
+                    <navigationItem key="navigationItem" title="Lista de Restrições" id="R1P-AT-baf">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="AFa-aG-GZx">
+                            <color key="tintColor" red="0.50196078430000002" green="0.64705882349999999" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
