@@ -10,7 +10,7 @@ import Foundation
 
 class ProductHandler {
 
-    func verifyProduct(barcode: String, completion: @escaping (Bool) -> Void) {
+    func verifyProduct(barcode: String, completion: @escaping (Product) -> Void) {
 
         let productMannager = ProductController()
         productMannager.findProductOnDatabse(productBarcode: barcode) { (product) in
@@ -19,11 +19,12 @@ class ProductHandler {
             ingredientsMannager.findIngredients(fromProduct: product, completion: { (ingredients) in
 
                 // Here you have all the ingredients from the product
-                print("These are the ingredients of \(product.name):")
                 let ingredientsList = ingredients.sorted(by: { $0.name < $1.name })
-                for ingredient in ingredientsList {
-                    print(ingredient.name)
-                }
+
+                var finalProduct = Product(name: product.name, recordId: product.recordId)
+                finalProduct.ingredientes = ingredientsList
+
+                completion(finalProduct)
             })
         }
     }
