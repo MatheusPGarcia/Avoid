@@ -7,9 +7,8 @@
 //
 
 import Foundation
-import CloudKit
 
-class ProductController: NSObject {
+class ProductController {
 
     func findProductOnDatabse(productBarcode: String, completion: @escaping (Product) -> Void) {
 

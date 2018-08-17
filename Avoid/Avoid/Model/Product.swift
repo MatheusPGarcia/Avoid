@@ -13,7 +13,8 @@ struct Product {
 
     var name: String
     var recordId: CKRecordID
-    var ingredients = [CKReference]()
+    var ingredientsReference = [CKReference]()
+    var ingredientes = [Ingredient]()
 
     init(name: String, recordId: CKRecordID) {
         self.name = name
