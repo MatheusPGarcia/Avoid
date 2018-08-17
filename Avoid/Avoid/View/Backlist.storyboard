@@ -13,16 +13,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Blacklist View Controller-->
+        <!--fyvh-->
         <scene sceneID="fs1-Xr-cmv">
             <objects>
-                <viewController storyboardIdentifier="BacklistViewController" id="B5d-hN-dJV" customClass="BlacklistViewController" customModule="Avoid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BacklistViewController" title="fyvh" id="B5d-hN-dJV" customClass="BlacklistViewController" customModule="Avoid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LCW-es-p2f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DeP-kx-H4U">
-                                <rect key="frame" x="0.0" y="90" width="375" height="507"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="533"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="BlacklistTableViewCell" rowHeight="60" id="0r1-WQ-PZU" customClass="BlacklistTableViewCell" customModule="Avoid" customModuleProvider="target">
@@ -70,25 +70,6 @@
                                     <outlet property="delegate" destination="B5d-hN-dJV" id="6dh-qr-X9G"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9FV-WT-DhB">
-                                <rect key="frame" x="0.0" y="20" width="375" height="70"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lista de Restrições" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0e-tQ-svp">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="A0e-tQ-svp" firstAttribute="top" secondItem="9FV-WT-DhB" secondAttribute="top" id="1uD-9V-E2E"/>
-                                    <constraint firstAttribute="trailing" secondItem="A0e-tQ-svp" secondAttribute="trailing" id="8Gk-vP-xeV"/>
-                                    <constraint firstAttribute="height" constant="70" id="AW8-Aj-YJT"/>
-                                    <constraint firstAttribute="bottom" secondItem="A0e-tQ-svp" secondAttribute="bottom" id="gBI-nG-Mnh"/>
-                                    <constraint firstItem="A0e-tQ-svp" firstAttribute="leading" secondItem="9FV-WT-DhB" secondAttribute="leading" id="iVW-5z-tiN"/>
-                                </constraints>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SE1-j2-DPc">
                                 <rect key="frame" x="94" y="612" width="187.5" height="40"/>
                                 <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -105,19 +86,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="DeP-kx-H4U" firstAttribute="top" secondItem="9FV-WT-DhB" secondAttribute="bottom" id="AIw-ac-aF0"/>
                             <constraint firstItem="DeP-kx-H4U" firstAttribute="leading" secondItem="GNS-Nz-ftz" secondAttribute="leading" id="INT-vd-wKh"/>
-                            <constraint firstItem="9FV-WT-DhB" firstAttribute="leading" secondItem="GNS-Nz-ftz" secondAttribute="leading" id="IaL-RJ-aGs"/>
-                            <constraint firstItem="GNS-Nz-ftz" firstAttribute="trailing" secondItem="9FV-WT-DhB" secondAttribute="trailing" id="X9P-ha-7Ie"/>
                             <constraint firstItem="DeP-kx-H4U" firstAttribute="trailing" secondItem="GNS-Nz-ftz" secondAttribute="trailing" id="XHh-Ez-qjp"/>
                             <constraint firstItem="GNS-Nz-ftz" firstAttribute="bottom" secondItem="SE1-j2-DPc" secondAttribute="bottom" constant="15" id="eeO-cs-crt"/>
-                            <constraint firstItem="9FV-WT-DhB" firstAttribute="top" secondItem="GNS-Nz-ftz" secondAttribute="top" id="ilF-Lf-J7u"/>
                             <constraint firstItem="SE1-j2-DPc" firstAttribute="centerX" secondItem="GNS-Nz-ftz" secondAttribute="centerX" id="jvv-2l-qmm"/>
                             <constraint firstItem="SE1-j2-DPc" firstAttribute="top" secondItem="DeP-kx-H4U" secondAttribute="bottom" constant="15" id="n7a-8b-qKr"/>
+                            <constraint firstItem="DeP-kx-H4U" firstAttribute="top" secondItem="GNS-Nz-ftz" secondAttribute="top" id="rWp-2q-rkn"/>
                             <constraint firstItem="SE1-j2-DPc" firstAttribute="width" secondItem="LCW-es-p2f" secondAttribute="width" multiplier="0.5" id="xiY-kH-bto"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GNS-Nz-ftz"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="R1P-AT-baf">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="AFa-aG-GZx"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="tableView" destination="DeP-kx-H4U" id="Z5s-2r-TQ4"/>
                     </connections>

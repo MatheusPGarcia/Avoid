@@ -45,10 +45,24 @@ extension ViewController: BarcodeScannerCodeDelegate {
 
         let checker = ProductHandler()
         checker.verifyProduct(barcode: code) { (result) in
-            print ("The product checker answered: \(result)")
+
+            controller.dismiss(animated: true, completion: nil)
+
+            let mainView = UIStoryboard(name: "Main", bundle: nil)
+            let identifier = "FeedbackViewController"
+
+            guard let destination = mainView.instantiateViewController(withIdentifier: identifier) as? FeedbackViewController else {
+                print("Error loading feedbackViewController")
+                return
+            }
+
+            destination.product = result
+
+            let navController = UINavigationController(rootViewController: destination)
+
+            self.navigationController?.present(navController, animated: true, completion: nil)
         }
 
-        controller.dismiss(animated: true, completion: nil)
         responseLabel.text = code
     }
 }
